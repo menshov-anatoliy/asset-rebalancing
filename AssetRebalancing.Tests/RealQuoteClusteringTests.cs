@@ -723,7 +723,16 @@ public sealed class RealQuoteClusteringTests
     /// <param name="NormalizedStructureScore">Нормализованная оценка структурной отделимости.</param>
     /// <param name="NormalizedStabilityScore">Нормализованная оценка временной устойчивости.</param>
     /// <param name="NormalizedRebalanceScore">Нормализованная оценка влияния на будущую ребалансировку.</param>
-    /// <param name="CompositeScore">Итоговый комбинированный score для выбора числа групп.</param>
+    /// <param name="CompositeScore">
+    /// Итоговый score для выбора числа групп k среди кандидатов.
+    /// Вычисляется как взвешенная сумма четырёх нормализованных компонент:
+    /// 0.35 × полезность отрицательной межгрупповой корреляции,
+    /// 0.25 × структурная разделимость кластеров,
+    /// 0.20 × устойчивость разбиения во времени,
+    /// 0.20 × благоприятность будущей ребалансировки.
+    /// Score не является самостоятельной финансовой метрикой;
+    /// он служит агрегированным критерием ранжирования кандидатов по качеству компромисса.
+    /// </param>
     private sealed record CandidateEvaluation(
         int GroupCount,
         IReadOnlyList<IReadOnlyList<string>> Groups,
