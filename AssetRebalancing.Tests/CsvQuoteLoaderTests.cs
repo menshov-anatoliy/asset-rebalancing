@@ -210,10 +210,10 @@ public sealed class CsvQuoteLoaderTests : IDisposable
 
         var expectedTickers = new[]
         {
-            "SBERP", "ZAYM", "SIBN", "BELU", "TATNP",
+            "SBERP", "SIBN", "BELU", "TATNP",
             "PLZL", "DOMRF", "PHOR", "MOEX", "MDMG",
-            "LKOH", "ПАРУС-ЛОГ", "XXXXXX",
-            "BTC-USD", "TAO-USD", "ETH-USD", "USDT-USD"
+            "LKOH", "ПАРУС-ЛОГ",
+            "BTC-USD", "TAO-USD", "ETH-USD"
         };
 
         foreach (var ticker in expectedTickers)

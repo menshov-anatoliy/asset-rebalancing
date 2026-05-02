@@ -331,10 +331,10 @@ var universe = new[]
 {
   "Portfolio": {
     "Tickers": [
-      "SBERP", "ZAYM", "SIBN", "BELU", "TATNP",
+      "SBERP", "SIBN", "BELU", "TATNP",
       "PLZL", "DOMRF", "PHOR", "MOEX", "MDMG",
-      "LKOH", "ПАРУС-ЛОГ", "XXXXXX",
-      "BTC-USD", "TAO-USD", "ETH-USD", "USDT-USD",
+      "LKOH", "ПАРУС-ЛОГ",
+      "BTC-USD", "TAO-USD", "ETH-USD",
       "NEWTICKET"
     ]
   }
@@ -381,7 +381,7 @@ dotnet test AssetRebalancing.Tests/AssetRebalancing.Tests.csproj --logger "conso
 | `LoadAll_BarsAreSortedByDate` | Сортировка при LoadAll |
 | `LoadAll_NonAsciiTickerName_ReturnsCorrectKey` | Кириллические имена тикеров (ПАРУС-ЛОГ) |
 | `LoadAll_DashInTickerName_ReturnsCorrectKey` | Дефис в имени тикера (BTC-USD) |
-| `Load_RealSampleData_AllTickersLoadSuccessfully` | Дымовой тест всех 17 реальных CSV-файлов |
+| `Load_RealSampleData_AllTickersLoadSuccessfully` | Дымовой тест всех 14 реальных CSV-файлов |
 
 ---
 
