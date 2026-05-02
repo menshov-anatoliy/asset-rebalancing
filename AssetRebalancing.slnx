@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="AssetRebalancing.Analytics/AssetRebalancing.Analytics.csproj" />
+  <Project Path="AssetRebalancing.Core/AssetRebalancing.Core.csproj" />
+  <Project Path="AssetRebalancing.Data/AssetRebalancing.Data.csproj" />
+  <Project Path="AssetRebalancing.Strategy/AssetRebalancing.Strategy.csproj" />
+  <Project Path="AssetRebalancing.Tests/AssetRebalancing.Tests.csproj" />
+</Solution>
