@@ -24,6 +24,8 @@
   <ItemGroup>
     <ProjectReference Include="..\AssetRebalancing.Core\AssetRebalancing.Core.csproj" />
     <ProjectReference Include="..\AssetRebalancing.Data\AssetRebalancing.Data.csproj" />
+    <ProjectReference Include="..\AssetRebalancing.Analytics\AssetRebalancing.Analytics.csproj" />
+    <ProjectReference Include="..\AssetRebalancing.Strategy\AssetRebalancing.Strategy.csproj" />
   </ItemGroup>
 
 </Project>
